@@ -6,16 +6,16 @@ class ClientSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Clients
-        fields = '__all__'
+        fields = ('id','name', 'mail', 'phone')
 
 class AccountSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Accounts
-        fields = '__all__'
+        fields = ('id','client','account','date')
 
 class MovSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Mov
-        fields = '__all__'
+        fields = ('__all__')
